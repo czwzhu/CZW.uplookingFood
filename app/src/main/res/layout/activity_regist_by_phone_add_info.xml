@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg_color" 
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/title_bg" >
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_login_btn_bg"
+            android:drawableLeft="@drawable/icon_back"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            android:text="手机号注册"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/v_regist_by_phone_add_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40.0dip"
+        android:layout_marginRight="40.0dip"
+        android:layout_marginTop="40.0dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/v_regist_by_phone_add_info_TextView_prompt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/text_size_26" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip" >
+
+            <TextView
+                android:id="@+id/v_regist_by_phone_add_info_TextView_resend"
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/edittext_black_bg"
+                android:enabled="false"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="重新发送"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_size_26" />
+
+            <EditText
+                android:id="@+id/v_regist_by_phone_add_info_EditText_captcha"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/v_regist_by_phone_add_info_TextView_resend"
+                android:background="@drawable/edittext_black_bg"
+                android:hint="请输入短信验证码"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/text_black_color"
+                android:textColorHint="@color/text_gray_color"
+                android:textSize="@dimen/text_size_26" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip" >
+
+            <EditText
+                android:id="@+id/v_regist_by_phone_add_info_EditText_pw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_black_bg"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/text_black_color"
+                android:textColorHint="@color/text_gray_color"
+                android:textSize="@dimen/text_size_26" />
+
+            <Button
+                android:id="@+id/v_regist_by_phone_add_info_Button_pwClear"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/clear_btn"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip" >
+
+            <EditText
+                android:id="@+id/v_regist_by_phone_add_info_EditText_nick"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_black_bg"
+                android:hint="昵称"
+                android:singleLine="true"
+                android:textColor="@color/text_black_color"
+                android:textColorHint="@color/text_gray_color"
+                android:textSize="@dimen/text_size_26" />
+
+            <Button
+                android:id="@+id/v_regist_by_phone_add_info_Button_nickClear"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/clear_btn"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/v_regist_by_phone_add_info_Button_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25.0dip"
+            android:background="@drawable/selector_login_btn_bg"
+            android:text="完成"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_30" />
+    </LinearLayout>
+
+</LinearLayout>

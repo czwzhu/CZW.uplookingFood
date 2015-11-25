@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	 <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            >
+            <app.uplookingfood.app.uplookingfood.View.CircleImageView
+                android:id="@+id/menu_user_img"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/person_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                />
+            <TextView 
+                android:id="@+id/menu_user_nickname_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="欢迎回家"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/menu_user_img"
+                android:layout_marginTop="10dp"
+                android:textColor="#999999"
+                />
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <CheckedTextView
+            android:id="@+id/menu_home"
+            style="@style/menu_text"
+            android:checked="true"
+            android:drawableLeft="@drawable/selector_menu_menu_img"
+            android:text="首页" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#44444444" />
+
+        <CheckedTextView
+            android:id="@+id/menu_menu"
+            style="@style/menu_text"
+            android:drawableLeft="@drawable/selector_menu_home_img"
+            android:text="菜谱分类" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#44444444" />
+
+        <CheckedTextView
+            android:id="@+id/menu_photo"
+            style="@style/menu_text"
+            android:drawableLeft="@drawable/selector_menu_photo_img"
+            android:text="随拍" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#44444444" />
+
+        <CheckedTextView
+            android:id="@+id/menu_setup"
+            style="@style/menu_text"
+            android:drawableLeft="@drawable/selector_menu_setup_img"
+            android:text="设置" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#44444444" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff1f1f1"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@drawable/title_bg"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="搜索食材、食谱"
+        android:drawableLeft="@drawable/menu_sarch"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:drawablePadding="5dp"
+        android:paddingLeft="10dp"
+        />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/home_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transcriptMode="normal"
+            android:divider="@null"/>
+        <ImageView
+            android:id="@+id/loadView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id="@+id/failedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="信号不小心被我吃掉了\n\n点击我重试"
+            android:textColor="#444444"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+        
+    </RelativeLayout>
+</LinearLayout>

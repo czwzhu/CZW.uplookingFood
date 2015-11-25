@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150.0dip"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp" >
+
+        <ImageView
+            android:id="@+id/item_home_head_recipe_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" 
+            android:background="#44999999"/>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/mask_200"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/item_home_head_recipe_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:maxWidth="90.0dip"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/item_home_head_recipe_auother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.0dip"
+        android:gravity="center"
+        android:maxWidth="80.0dip"
+        android:singleLine="true"
+        android:text="小傻瓜"
+        android:textColor="#b6b6b6"
+        android:textSize="12sp" 
+        android:visibility="gone"/>
+
+</LinearLayout>

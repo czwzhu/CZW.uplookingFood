@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff1f1f1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/empty_view"
+    android:paddingTop="90.0dip"
+    android:visibility="gone" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="15.0dip"
+        android:drawableTop="@drawable/xiaolian"
+        android:gravity="center"
+        android:textColor="#b6b6b6"
+        android:textSize="14sp" 
+        android:text="亲！这里还是空的哦～"/>
+
+</LinearLayout>

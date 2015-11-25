@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99999999" >
+
+        <ImageView
+            android:id="@+id/v_recipe_detail_head_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+	<TextView
+        android:id="@+id/v_recipe_detail_head_recipeNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15.0dip"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip"
+        android:paddingTop="26.0dip"
+        android:text="土豆鸡块"
+        android:textColor="#ff323232"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/v_recipe_detail_head_introduceTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:lineSpacingExtra="10dp"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip"
+        android:textSize="17sp" />
+    
+    <RelativeLayout
+        android:id="@+id/v_header_hideableview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20.0dip"
+        android:paddingTop="8dip" >
+
+        <LinearLayout
+            android:id="@+id/v_header_recipe_detail_top_option_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="visible" 
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/recipe_detail_collect_recipe"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/recipe_detail_collect_recipe_icon"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/btn_collect_recipe" />
+
+                <TextView
+                    android:id="@+id/recipe_detail_collect_recipe_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:text="收藏菜谱"
+                    android:textColor="#ff323232"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recipe_detail_share_recipe"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/recipe_detail_share_recipe_icon"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/btn_share_recipe" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:text="分享菜谱"
+                    android:textColor="#ff323232"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/v_recipe_header_detail_material_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="你要准备"
+            android:textColor="#999999"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/dotted_repeat" />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="25dp"
+        android:layout_marginBottom="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:text="现在开始做吧"
+            android:textColor="#999999"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/input_step_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5.0dip"
+            android:text="点击步骤进入大图模式"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

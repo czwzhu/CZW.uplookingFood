@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg_color" >
+    
+    <app.uplookingfood.app.uplookingfood.View.ParallaxScrollListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        />
+     <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/v_recipe_add_comment_bar"
+        />
+	<ImageView 
+	    android:id="@+id/back"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/selector_btn_back_round"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginTop="8dp"
+	    />
+	<RelativeLayout
+        android:id="@+id/recipe_detail_top_option_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingRight="20.0dip"
+        android:paddingTop="8.0dip" >
+		
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20.0dip"
+            android:background="@drawable/selector_btn_back_round" />
+
+        <LinearLayout
+            android:id="@+id/recipe_detail_top_right_icon_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/recipe_detail_collect_recipe"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/recipe_detail_collect_recipe_icon"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/btn_collect_recipe" />
+
+                <TextView
+                    android:id="@+id/recipe_detail_collect_recipe_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:text="收藏菜谱"
+                    android:textColor="#ff323232"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recipe_detail_share_recipe"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/recipe_detail_share_recipe_icon"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/btn_share_recipe" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:text="分享菜谱"
+                    android:textColor="#ff323232"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

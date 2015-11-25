@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#44999999">
+
+        <app.uplookingfood.app.uplookingfood.View.AutoScrollViewPager
+            android:id="@+id/home_head_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/pager_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#55444444"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="30dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="荤素搭配长命百岁"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#44444444"
+        android:paddingLeft="10dp">
+
+        <app.uplookingfood.app.uplookingfood.View.IndicatorView
+            android:id="@+id/indicatorView"
+            app:bottomMargin="6dp"
+            app:circleMargin="7dp"
+            app:circleWidth="7dp"
+            app:normalCircleColor="#ffffff"
+            app:slideCircleColor="#ff0000"
+            app:topMargin="6dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>
